@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>login</title>
+        <style>
+            input[type=submit] {
+                color: red;
+                font-size: large;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Login Form</h1>
+        <hr>
+        <form action="" method="get">
+            사용자 ID :
+            <input type="text" name="user_id" id="">
+            <br>
+            비밀 번호 :
+            <input type="password" name="user_password" id="" maxlength="5">
+            <br>
+            자 소 서 :
+            <textarea name="profile" id="" cols="20" rows="5">
+                이곳에 자기소개서를 작성해 주세요.
+            </textarea>
+            <br>
+            브라우저 종류 :
+            <input type="text" list="browser">
+            <datalist id="browser">
+                <option value="Edge"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+            </datalist>
+            <br>
+            브라우저 종류 :
+            <select name="cars">
+                <option value="Edge">Edge</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Opera">Opera</option>
+                <option value="Safari">Safari</option>
+            </select>
+            <br>
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div.container {
+                border: 2px dotted blue;
+                width: 90%;
+                height: 300px;
+                position: relative;
+            }
+            div.container > div {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 900;
+                text-align: center;
+                line-height: 50px;
+                border: 1px dotted black;
+            }
+            div.container > div.a {
+                position: absolute;
+                top: 50%;
+                transform: translate(0,-50%);
+            }
+            div.container > div.b {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50% , 0);
+            }
+            div.container > div.c {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            div.container > div.c:hover {
+                position: absolute;
+                cursor: crosshair;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%);
+                background-color: blue;
+                width: 100px;
+                height: 100px;
+            }
+            div.container > div.d {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(0,-50%);
+            }
+            div.container > div.e {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%,0);
+            }
+            div.container > div.f {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            div.container > div.g {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            div.container > div.h {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            div.container > div.i {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            div.img {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+            }
+        </style>
+    </head>
+    <bodyf>
+        <h1>relative postion</h1>
+        <hr>
+        <div class="container">
+            <div class="a">A</div>
+            <div class="b">B</div>
+            <div class="c">C</div>
+            <div class="d">D</div>
+            <div class="e">E</div>
+            <div class="f">F</div>
+            <div class="g">G</div>
+            <div class="h">H</div>
+            <div class="i">I</div>
+        </div>
+        <div class="container">
+            <div class="a">A</div>
+            <div class="b">B</div>
+            <div class="c">C</div>
+        </div>
+        <div class="img">
+            <img src="../chap03/images/jajang.png" alt="짜장면그림">
+        </div>
+    </body>
+</html>

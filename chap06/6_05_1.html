@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table {
+                border: 1px dotted black;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            td {
+                border: 1px dotted black;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            let n = prompt("구구단을 입력하세요", 1);
+            if (n === null) {
+                document.write("취소버튼을 눌렀습니다.");
+            } else if (n === "") {
+                document.write("값을 입력해주세요.");
+            } else if (n > 0 && n < 10) {
+                n = parseInt(n);
+                let i = 0;
+                document.write("<table>");
+                document.write(`<tr><td>${n}단</td></tr>`)
+                for (i = 1; i <= 9; i++) {
+                    let sum = n * i;
+                    document.write(`<tr><td>${n} * ${i} = ${sum}</td></tr>`);
+                }
+                document.write("</table>");
+            }
+        </script>
+    </body>
+</html>

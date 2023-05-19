@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                margin: auto;
+                width: 70%;
+            }
+            label {
+                display: block;
+                margin: 10px;
+            }
+            label span {
+                display: inline-block;
+                width: 60px;
+                text-align: right;
+                padding: 5px;
+                margin-right: 10px;
+            }
+            div {
+                text-align: center;
+                position: relative;
+            }
+            button {
+                position: absolute;
+                top: 0;
+                left: 22.7%;
+                transform: translate(-50%, 0);
+            }
+            input[type="text"] {
+                color: red;
+                border: 2px dotted violet;
+                border-radius: 10px 10px;
+            }
+            input[type="text"]:hover {
+                background-color: aqua;
+                font-size: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CONTACT US</h1>
+        <hr>
+        <form action="server.php" method="get">
+            <label>
+                <span>Name</span><input type="text"></label>
+            <label>
+                <span>Email</span><input type="email"></label>
+            <label>
+                <span>Comment</span>
+                <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+            </label>
+            <div>
+                <button type="submit">submit</button>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+                margin: auto;
+                width: 50%;
+            }
+            div {
+                background-color: greenyellow;
+                padding: 50px;
+                margin: 20px;
+            }
+            div#div1 {
+                border-radius: 50px;
+            }
+            div#div2 {
+                border-radius: 0 20px 40px 60px;
+            }
+            div#div3 {
+                border-radius: 0 20px 40px 20px;
+            }
+            div#div4 {
+                border-radius: 0 20px;
+            }
+            div#div5 {
+                border-radius: 50px;
+                border: 3px dotted black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>둥근 모서리 테두리</h1>
+        <hr>
+        <div id="div1">
+            <span>반지름 50픽셀의 둥근 모서리</span>
+        </div>
+        <div id="div2">
+            <span>반지름 0,20,40,60 둥근 모서리</span>
+        </div>
+        <div id="div3">
+            <span>반지름 0,20,40,20 둥근 모서리</span>
+        </div>
+        <div id="div4">
+            <span>반지름 0,20,0,20 둥근 모서리</span>
+        </div>
+        <div id="div5">
+            <span>반지름 50의 둥근 점선 모서리</span>
+        </div>
+    </body>
+</html>

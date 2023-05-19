@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Dom객체 P의 프로퍼티, 스타일, 이벤트리스너</h1>
+        <hr>
+        <p
+            id="firstP"
+            style="color: blue; background-color: yellow;"
+            onclick="this.style.color='teal'">이것은
+            <span style="color: red;">문장입니다.</span>
+        </p>
+        <button type="button" onclick="spanEvent()">span 이벤트처리</button>
+        <br>
+        <script>
+            const p = window
+                .document
+                .getElementById("firstP");
+            document.write(`p.id = ${p.id} <br>`);
+            document.write(`p.tagName = ${p.tagName}<br>`);
+            document.write(`p.innerHTML = ${p.innerText}<br>`);
+            document.write(`p.style.color = ${p.style.color}<br>`);
+            document.write(`p.onclick = ${p.onclick}<br>`);
+            document.write(`p.childElementCount = ${p.childElementCount}<br>`);
+            document.write(`p.width (너비) = ${p.offsetWidth}<br>`);
+            document.write(`p.height (높이) = ${p.offsetHeight}<br>`);
+        </script>
+        <script>
+            function spanEvent() {
+                const span = document.getElementsByTagName("span"); // getElementsByTagName 은 리턴값이 배열이다.
+                span[0].style.color = "magenta";
+                span[0].style.fontSize = "3em";
+                span[0].style.display = "inline-block";
+                span[0].style.border = "1px dotted black";
+                span[0].innerHTML = "문장이 아닙니다.";
+            }
+        </script>
+    </body>
+</html>

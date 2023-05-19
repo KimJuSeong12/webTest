@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            p {
+                width: 200px;
+                height: 200px;
+            }
+            p span {
+                animation-name: span_color_animation;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes span_color_animation {
+                0% {
+                    color: blue;
+                    padding: 10px;
+                    background-color: bisque;
+                }
+                40% {
+                    color: green;
+                    padding: 5px;
+                    background-color: gray;
+                }
+                90% {
+                    color: red;
+                    padding: 10px;
+                    background-color: white;
+                }
+            }
+            h1 {
+                border: 1px dotted gray;
+                display: inline-block;
+                transition: font-size 3600s;
+            }
+            h1:hover {
+                font-size: 500%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>span animation</h1>
+        <hr>
+        <p>
+            <span>span</span>
+            텍스트를 5초에 blue, green, red로 무한반복 합니다.</p>
+        <hr>
+        <h1>꽝</h1>
+    </body>
+</html>

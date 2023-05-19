@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            h1 {
+                text-align: center;
+            }
+            div {
+                width: 500px;
+                height: 50vh;
+                border: 1px dotted black;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                margin: 10px auto;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+        </style>
+        <script src="./js/6_01.js" defer></script>
+    </head>
+    <body>
+        <h1>마우스를 올려 보세요</h1>
+        <hr>
+        <div><img
+            src="./media/apple.png"
+            alt="사과그림이미지"
+            onmouseover="over(this,1)"
+            onmouseout="out(this,1)">
+            <a href="javascript:alert('경고창')">
+                <img
+                    src="./media/banana.png"
+                    alt="바나나그림이미지"
+                    onmouseover="over(this,2)"
+                    onmouseout="out(this,2)">
+            </a>
+        </div>
+        <script>
+            document.write("자바스크립트에서 실행된 document 객체");
+            document.write("<br>")
+            let number = Number(prompt("당신이 좋아하는 숫자는")); 
+            if(number === null){
+              document.write("취소버튼을 눌렀습니다.");
+            } else if(number === "") {
+              document.write("아무값도 입력하지 않으셨습니다.");
+            } else {
+              document.write(`문자열 입력값이 ${number + 5} 입력하셨습니다.`);
+            }
+        </script>
+    </body>
+</html>

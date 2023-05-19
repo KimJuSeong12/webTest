@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table {
+                width: 60%;
+                margin: auto;
+            }
+            tfoot,
+            thead {
+                background-color: gray;
+                color: yellow;
+            }
+            td,
+            th {
+                width: 150px;
+                height: 30px;
+                padding: 5px;
+                text-align: center;
+            }
+            tbody > tr:nth-child(even) {
+              background-color: azure;
+            }
+            tbody > tr:hover {
+              background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>테이블 가상클래스</h1>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>데이터</th>
+                    <th>데이터</th>
+                    <th>데이터</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>합계</th>
+                    <th>합계</th>
+                    <th>합계</th>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

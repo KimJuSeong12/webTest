@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            document.write(`<h1>Math를 활용한 구구단 연습</h1><hr>`);
+            let firstNumber = parseInt(Math.random() * (21 - 1 + 1) + 1);
+            let secondNumber = parseInt(Math.random() * (9 - 1 + 1) + 1);
+            let number = parseInt(prompt(`${firstNumber}*${secondNumber}값은 얼마입니까?`));
+            if (7 * 6 === number) {
+                document.write(`${number}(은/는) 정답입니다.`);
+            } else {
+                document.write(`${number}(은/는) 오답입니다.`);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Document</title>
+        <style>
+            aside,
+            div,
+            footer,
+            header,
+            nav,
+            section {
+                border: 1px solid black;
+                text-align: center;
+            }
+            div.container {
+                width: 90%;
+                height: 100vh;
+                margin: auto;
+            }
+            header,
+            nav {
+                width: 100%;
+                height: 15%;
+            }
+            section {
+                width: 65%;
+                height: 60%;
+                float: left;
+            }
+            section > .section1 {
+                width: 90%;
+                height: 40%;
+                margin: auto auto 5px;
+            }
+
+            aside {
+                width: 34%;
+                height: 60%;
+                float: right;
+            }
+            aside > .article1 {
+                width: 90%;
+                height: 20%;
+                margin: auto auto 5px;
+            }
+            aside > .article2 {
+                width: 90%;
+                height: 60%;
+                margin: auto auto 5px;
+            }
+
+            footer {
+                width: 100%;
+                height: 10%;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h2>header</h2>
+            </header>
+            <nav>
+                <h2>nav</h2>
+            </nav>
+            <section>
+                <h2>section</h2>
+                <div class="section1">
+                    <h2>section1</h2>
+                </div>
+                <div class="section1">
+                    <h2>section2</h2>
+                </div>
+            </section>
+            <aside>
+                <h2>aside</h2>
+                <div class="article1">
+                    <h2>article1</h2>
+                </div>
+                <div class="article2">
+                    <h2>article2</h2>
+                </div>
+            </aside>
+            <footer>
+                <h2>footer</h2>
+            </footer>
+        </div>
+    </body>
+</html>

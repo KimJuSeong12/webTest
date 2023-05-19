@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 70%;
+    margin: auto;
+}
+header {
+    border: 1px solid black;
+    height: 260px;
+    padding: 10px;
+}
+div#hamburger {
+    height: 15%;
+}
+div#hamburger img {
+    height: 98%;
+    width: 100%;
+}
+div#search {
+    margin-top: 5px;
+    border: 1px dotted black;
+    height: 50%;
+    text-align: center;
+}
+div#search img {
+    margin-top: 30px;
+    text-align: center;
+}
+div.input-group {
+    margin-top: 20px;
+}
+div#menu {
+    margin-top: 5px;
+    border: 1px dotted black;
+    height: 32%;
+    text-align: center;
+}
+div#menu img {
+    height: 100%;
+    width: 100%;
+}
+div#left {
+    border: 1px solid black;
+    width: 70%;
+    float: left;
+    padding: 5px;
+}
+div#news {
+    border: 1px solid black;
+    padding: 3px;
+    height: 430px;
+}
+div#news_tab {
+    border: 1px dotted black;
+    height: 10%;
+}
+div#news_tab img {
+    margin-left: 45px;
+}
+div#news_head {
+    margin-top: 5px;
+    border: 1px dotted black;
+    height: 8%;
+    text-align: center;
+}
+div#news_head img {
+    height: 100%;
+}
+div#news_table {
+    margin-top: 5px;
+    height: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+div.item {
+    width: 140px;
+    height: 60px;
+    box-sizing: border-box;
+  }
+div#news_more {
+    border: 1px dotted black;
+    height: 7%;
+    text-align: center;
+}
+div#news_more img {
+    height: 100%;
+}
+div#shopping {
+    border: 1px solid black;
+    padding: 3px;
+    height: 560px;
+}
+div#shopping_tab {
+    border: 1px dotted black;
+    height: 10%;
+    text-align: center;
+}
+div#shopping_tab img {
+    margin-top: 7px;
+}
+div#shopping_head {
+    margin-top: 5px;
+    border: 1px dotted black;
+    height: 8%;
+}
+div#shopping_head img {
+    height: 100%;
+    margin-left: 60px;
+}
+div#shopping_table {
+    margin-top: 5px;
+    border: 1px dotted black;
+    height: 68%;
+    text-align: center;
+}
+div#shopping_more {
+    border: 1px dotted black;
+    height: 7%;
+    text-align: center;
+}
+div#shopping_more img {
+    height: 100%;
+}
+div#book {
+    border: 1px solid black;
+    padding: 3px;
+    height: 970px;
+}
+div#book_room {
+    border: 1px dotted black;
+    height: 6%;
+    text-align: center;
+}
+div#book_room img {
+    margin-top: 15px;
+    margin-right: 15px;
+}
+div#book_new {
+    margin-top: 5px;
+    border: 1px dotted black;
+    height: 5%;
+}
+div#book_new img {
+    height: center;
+    margin-left: 57px;
+}
+div#book_table1 {
+    margin-top: 5px;
+    border: 1px dotted black;
+    height: 45%;
+}
+div#book_table1 img {
+    height: 100%;
+    width: 100%;
+    padding: 0 50px;
+}
+div#book_blank {
+    height: 3%;
+}
+div#book_bestseller {
+    margin-top: 5px;
+    border: 1px dotted black;
+    height: 5%;
+    text-align: center;
+}
+div#book_bestseller img{
+    margin-top: 10px;
+}
+div#book_table2 {
+    margin-top: 5px;
+    border: 1px dotted black;
+    height: 25%;
+}
+div#book_table2 img {
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+}
+div#book_more {
+    border: 1px dotted black;
+    height: 7%;
+    text-align: center;
+}
+div#book_more img {
+    margin-top: 10px;
+}
+div#right {
+    display: inline-block;
+    border: 1px solid black;
+    width: 30%;
+    padding: 5px;
+}
+div#login {
+    border: 1px dotted black;
+    height: 165px;
+    padding: 3px;
+}
+div#login_safe {
+    border: 1px dotted black;
+    height: 20%;
+    text-align: center;
+}
+div#login_safe img {
+    height: 100%;
+}
+div#login_main {
+    border: 1px dotted black;
+    height: 50%;
+    margin-top: 5px;
+    text-align: center;
+}
+div#login_main img {
+   width: 98%;
+   height: 85%;
+   margin-top: 7px;
+}
+div#login_found {
+    border: 1px dotted black;
+    height: 23%;
+    margin-top: 5px;
+    text-align: center;
+}
+div#login_found img {
+    margin-top: 5px;
+}
+div#stock_market,
+div#weather {
+    border: 1px dotted black;
+    height: 240px;
+    padding: 3px;
+}
+div#weather_location {
+    border: 1px dotted black;
+    height: 15%;
+    text-align: center;
+}
+div#weather_location img {
+    width: 95%;
+    height: 98%;
+}
+div#weather_map {
+    border: 1px dotted black;
+    height: 75%;
+    text-align: center;
+}
+div#weather_map img {
+    width: 95%;
+}
+div#stock_market_time {
+    border: 1px dotted black;
+    height: 15%;
+    text-align: center;
+}
+div#stock_market_time img {
+    width: 98%;
+}
+div#stock_market_graph {
+    border: 1px dotted black;
+    height: 75%;
+    text-align: center;
+}
+div#stock_market_graph img {
+    width: 98%;
+}
+div#widget {
+    border: 1px dotted black;
+    height: 780px;
+    padding: 3px;
+    background-color: RGB(244, 246, 250);
+}
+div#widget_board {
+    border: 1px dotted black;
+    height: 5%;
+    text-align: center;
+}
+div#widget_board img {
+    width: 98%;
+}
+div#widget_calender {
+    border: 1px dotted black;
+    height: 25%;
+    margin-top: 5px;
+    text-align: center;
+}
+div#widget_calender img {
+    width: 98%;
+    height: 97%;
+    margin-top: 3px;
+}
+div#widget_papago {
+    border: 1px dotted black;
+    height: 25%;
+    margin-top: 5px;
+    text-align: center;
+}
+div#widget_papago img {
+    width: 98%;
+    height: 98%;
+    margin-left: 2px;
+}
+div#widget_now {
+    border: 1px dotted black;
+    height: 35%;
+    margin-top: 5px;
+    text-align: center;
+}
+div#widget_now img {
+    width: 98%;
+    height: 100%;
+}
+div#widget_mobile {
+    border: 1px dotted black;
+    height: 7%;
+    margin-top: 5px;
+    text-align: center;
+}
+div#widget_mobile img {
+    width: 98%;
+    margin-top: 7px;
+}
+footer {
+    border: 1px solid black;
+    background-color: RGB(245, 246, 247);
+    height: 360px;
+    padding: 3px;
+    clear: both;
+}
+div#blank {
+    border: 1px solid black;
+    height: 17%;
+}
+div#announcement {
+    border: 1px solid black;
+    padding: 7px;
+    height: 17%;
+    text-align: center;
+}
+div#announcement2 {
+    border: 1px solid black;
+    height: 25%;
+    text-align: center;
+}
+div#announcement2 img {
+    height: 98%;
+    width: 100%;
+    padding: 0 20px;
+}
+div#company {
+    border: 1px solid black;
+    height: 25%;
+    text-align: center;
+}

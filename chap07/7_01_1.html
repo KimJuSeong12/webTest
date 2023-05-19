@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Array 객체로 배열 만들기</h1>
+        <hr>
+        <script>
+            const COUNT = 6;
+            let pro = new Array();
+            let sum = 0;
+            for (let i = 0; i < COUNT; i++) {
+                pro[i] = parseInt(prompt(`${i + 1}번째 온도를 입력하세요.`))
+            }
+            for (let i = 0; i < pro.length; i++) {
+                sum += pro[i]
+            }
+            document.write(`평균 온도는 ${sum / pro.length} <br>`)
+        </script>
+    </body>
+</html>

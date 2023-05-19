@@ -1,0 +1,11 @@
+div#divId {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  border: 1px;
+  margin-bottom: 20px;
+}
+
+#spanId {
+  color: red;
+}

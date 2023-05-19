@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div {
+                position: relative;
+                border: 1px dotted black;
+                width: 90%;
+                height: 300px;
+                margin: auto;
+            }
+            div img {
+                position: absolute;
+                width: 100px;
+                height: 150px;
+                z-index: 10;
+            }
+            div > img#card1 {
+                top: 20px;
+                left: 20px;
+                z-index: 9;
+            }
+            div > img#card2 {
+                top: 40px;
+                left: 40px;
+                z-index: 8;
+            }
+            div > img#card3 {
+                top: 60px;
+                left: 60px;
+                z-index: 7;
+            }
+            div > img#card4 {
+                top: 80px;
+                left: 80px;
+                z-index: 6;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>z-index property</h1>
+        <hr>
+        <div>
+            <img src="./images/spade-A.png" alt="카드A사진" id="card1">
+            <img src="./images/spade-2.png" alt="카드2사진" id="card2">
+            <img src="./images/spade-3.png" alt="카드3사진" id="card3">
+            <img src="./images/spade-7.png" alt="카드7사진" id="card4">
+        </div>
+    </body>
+</html>
