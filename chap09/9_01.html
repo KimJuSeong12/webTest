@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="./js/9_01.js" defer="defer"></script>
+    </head>
+    <body onload="mouseEvent()">
+        <h1>HTML 태그에 리스너 작성</h1>
+        <hr>
+        <!-- 첫번째 방법(인라인 자바스크립트) -->
+        <!-- <p onmouseover="this.style.backgroundColor = 'orchid'"
+        onmouseout="this.style.backgroundColor = 'white'">마우스 올리면 orchid 색으로 변경, 마우스가
+        나가면 white색으로 변경</p> -->
+
+        <!-- 두번째 방법 -->
+        <!-- <p id="pEvent" onmouseover="pEvent1()" onmouseout="pEvent2()">마우스 올리면
+        orchid 색으로 변경, 마우스가 나가면 white색으로 변경</p> -->
+
+        <!-- 세번째 방법 -->
+        <p id="pEvent">마우스 올리면 orchid 색으로 변경, 마우스가 나가면 white색으로 변경</p>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script>
+            let text = `문서 로딩중일 때 readystate = ${document.readyState}`;
+            document.write(text)
+        </script>
+    </head>
+    <body
+        style="background-color: aqua; color: red; direction: ltr"
+        onload="printProperties()">
+        <h3 class="plain">document의 주요 프로퍼티</h3>
+        <hr class="plain">
+        <a class="plain" href="http://www.naver.com">네이버 홈페이지</a>
+        <form action="server.php" method="post">
+            <input
+                class="plain"
+                type="text"
+                name="info"
+                id="input"
+                value="여기 포커스"
+                placeholder="여기 포커스">
+        </form>
+        <script>
+            function printProperties() {
+                const allTag = document.querySelectorAll(".plain");
+                for (let i = 0; i < allTag.length; i++) {
+                    allTag[i].style.border = `1px dotted black`;
+                }
+                text += "1. location =" + document.location + "\n";
+                text += "2. URL =" + document.URL + "\n";
+                text += "3. title =" + document.title + "\n";
+                text += "4. head의 id =" + document.head.id + "\n";
+                text += "5. body color =" + document.body.style.color + "\n";
+                text += "6. domain =" + document.domain + "\n";;
+                text += "7. lastModified =" + document.lastModified + "\n";
+                text += "8. defaultView = " + document.defaultView + "\n";
+                text += "9. 문서의 로드 완료 후 readyState = " + document.readyState + "\n";
+                text += "10. referrer = " + document.referrer + "\n";
+                text += "11. activeElement = " + document.activeElement.value + "\n";
+                text += "12. documentElement의 태그 이름 = " + document.documentElement.tagName + "\n";
+                alert(text);
+            }
+        </script>
+    </body>
+</html>
