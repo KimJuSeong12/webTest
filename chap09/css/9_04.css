@@ -1,0 +1,13 @@
+p {
+    color: blue;
+    font-weight: 700;
+}
+
+p > span {
+    color: red;
+    font-weight: bold;
+}
+
+div {
+  color: green;
+}
