@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    left: 45%;
+    top: 10%;
+}
+
+.menu {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+ul {
+    background-color: #333333;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+ul li {
+    display: inline-block;
+    color: rgb(190, 187, 187);
+    margin: 5px;
+}
+
+ul li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.banner {
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+/* ------------------------------------------------------------ */
+/* 슬라이드쇼 영역 */
+.slideshow {
+    background-color: white;
+    min-width: 960px;
+    height: 465px;
+    position: relative;
+}
+
+/* 슬라이드이미지 영역 */
+.slideshow_slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* 4장의 이미지를 위치조정 */
+.slideshow_slides a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+.slideshow_slides a img {
+    height: 465px;
+    width: 80%;
+}
+
+/* 네비게이션바를 중앙에 배치 */
+.slideshow_nav a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    font-size: 62px;
+    transform: translate(-50%,-50%);
+    opacity: 0.5;
+}
+
+/* 네비게이션바를 좌우로 이동 */
+.slideshow_nav a.prev {
+    margin-left: -400px;
+}
+
+.slideshow_nav a.next {
+    margin-left: 400px;
+}
+
+/* 인디케이터를 중앙에 배치 */
+.indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
+}
+
+.indicator a {
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+    opacity: 0.8;
+    padding: 5px;
+}
+
+.indicator a.active {
+    color: orangered;
+}
+/* ------------------------------------------------------------ */
+
+.main {
+    width: 100%;
+    min-height: 700px;
+    text-align: center;
+}
+
+div.left {
+    display: inline-block;
+    width: 20%;
+}
+
+div.center {
+    display: inline-block;
+    width: 58%;
+}
+/* ============================================================ */
+.member {
+    width: 60%;
+    margin: auto;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+}
+
+.member .field {
+    margin: 5px 0;
+}
+
+.member b {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.member input:not(input[type=radio]),
+.member select {
+    border: 1px solid #dadada;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.member input[type=button],
+.member input[type=submit] {
+    background-color: #333333;
+    color: #fff;
+}
+
+.member input:focus,
+.member select:focus {
+    border: 1px solid #333333;
+}
+
+.field.birth div {
+    display: flex;
+    gap: 10px;
+}
+
+.field.tel-number div {
+    display: flex;
+}
+
+.field.tel-number div input:nth-child(1) {
+    flex: 2;
+}
+
+.field.tel-number div input:nth-child(2) {
+    flex: 1;
+}
+
+.field.gender div {
+    border: 1px solid #dadada;
+    padding: 15px 5px;
+    background-color: #fff;
+}
+
+.placehold-text {
+    display: block;
+    position: relative;
+}
+
+.placehold-text:before {
+    content: "@naver.com";
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    pointer-events: none;
+}
+
+.userpw {
+    background: url("./images/images2/icon-01.png") no-repeat center right 15px;
+    background-size: 20px;
+    background-color: #fff;
+}
+
+.userpw-confirm {
+    background: url("./images/images2/icon-02.png") no-repeat center right 15px;
+    background-size: 20px;
+    background-color: #fff;
+}
+
+.member-footer div a:after {
+    content: '|';
+    font-size: 10px;
+    color: #bbb;
+    margin-right: 5px;
+    margin-left: 7px;
+    display: inline-block;
+    transform: translateY(-1px);
+}
+/* ============================================================ */
+
+div.right {
+    display: inline-block;
+    width: 20%;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+}
